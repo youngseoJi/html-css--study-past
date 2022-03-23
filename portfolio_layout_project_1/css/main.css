@@ -10,13 +10,13 @@ p {
 
 .Portfolio-container {
   width: 100%;
-  height: 800px;
+  height: 1000px;
   padding-top: 1px;
   background-color: whitesmoke;
 }
 
 .main-container {
-  width: 90%;
+  width: 98%;
   min-width: 500px;
   height: 40%;
   padding: 40px;
@@ -71,14 +71,65 @@ button:hover {
 }
 
 .mid-content {
-  width: 90%;
+  width: 98%;
   text-align: center;
-  min-width: 500px;
-  height: 40%;
+  min-width: 300px;
+  height: 20%;
   padding: 40px;
   margin: auto;
 }
 
 .mid-content h4 {
   margin-bottom: 10px;
+}
+
+.serve-container {
+  display: flex;
+  width: 98%;
+  min-width: 500px;
+  background-color: rgb(72, 72, 200);
+  padding: 10px;
+  margin: auto;
+  flex-direction: column;
+}
+/* flex-direction: column; */
+.serve-title {
+  margin: 20px;
+  text-align: center;
+  position: relative;
+  top: -10px;
+  color: white;
+}
+
+.serve-content {
+  display: flex;
+  width: 90%;
+  max-width: 1000px;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+}
+
+.sub-menu i {
+  background-color: rgb(254, 247, 220);
+  width: 100px;
+  height: 100px;
+  padding-top: 25px;
+  margin-bottom: 10px;
+  border-radius: 50px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.sub-menu i:hover {
+  background-color: violet;
+}
+
+.sub-menu {
+  padding: 10px;
+}
+
+.last-container {
+  text-align: center;
+  padding: 10px;
 }
