@@ -5,23 +5,16 @@
 }
 
 p {
-  font-size: 15px;
-}
-
-.Portfolio-container {
-  width: 100%;
-  height: 100%;
-  padding-top: 1px;
-  background-color: whitesmoke;
+  font-size: 20px;
 }
 
 .main-container {
-  width: 98%;
-  min-width: 500px;
-  height: 40%;
+  width: 95%;
+  max-width: 1800px;
+  height: 400px;
   padding: 40px;
   margin: auto;
-  margin-top: 10px;
+  margin-top: 20px;
   background: linear-gradient(rgb(72, 72, 200), rgb(220, 152, 220));
   overflow: hidden;
 }
@@ -32,17 +25,16 @@ p {
 }
 
 .main-title {
-  display: block;
-  font-size: 35px;
+  font-size: 60px;
 }
 .main-content p {
-  font-size: 15px;
+  font-size: 25px;
 }
 
 button {
-  margin-top: 10px;
-  padding: 10px 20px;
-  font-size: 15px;
+  margin-top: 20px;
+  padding: 20px;
+  font-size: 25px;
   background-color: rgb(96, 94, 94);
   color: white;
   border-radius: 5px;
@@ -66,12 +58,12 @@ button:active {
   position: absolute;
   top: 30%;
   left: 70%;
-  width: 200px;
+  width: 300px;
   /* height: 50%; */
 }
 
 .mid-content {
-  width: 98%;
+  width: 95%;
   text-align: center;
   min-width: 300px;
   height: 10%;
@@ -79,35 +71,32 @@ button:active {
   margin: auto;
 }
 
-.mid-content h4 {
-  margin-bottom: 10px;
-}
-
 .serve-container {
   display: flex;
-  width: 98%;
-  min-width: 20%;
+  width: 95%;
+  max-width: 1800px;
   background-color: rgb(72, 72, 200);
   padding: 10px;
   margin: auto;
   flex-direction: column;
 }
-/* flex-direction: column; */
+
 .serve-title {
-  margin: 20px;
+  margin-top: 20px;
   text-align: center;
-  position: relative;
-  top: -10px;
   color: white;
 }
 
 .serve-content {
   display: flex;
-  width: 90%;
-  max-width: 1000px;
   justify-content: center;
   margin: auto;
+  margin-top: 20px;
   text-align: center;
+}
+.serve-content h3,
+.serve-content p {
+  color: white;
 }
 
 .sub-menu i {
@@ -131,11 +120,16 @@ button:active {
 }
 
 .last-container {
-  width: 98%;
+  margin: auto;
+  width: 95%;
   height: 40%;
   text-align: center;
-  padding: 10px;
+  padding: 20px;
 }
+.last-container h1 {
+  margin-top: 0px;
+}
+
 .sub-box {
   display: flex;
   flex-direction: column;
@@ -146,7 +140,6 @@ button:active {
   display: flex;
   justify-content: center;
   margin: 20px auto;
-  margin-top: 1;
   width: 60%;
   /* overflow: hidden; */
 }
@@ -158,8 +151,8 @@ button:active {
   text-align: center;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 300px;
-  height: 200px;
+  width: 500px;
+  height: 300px;
 }
 .bg-1 {
   background-image: url(/portfolio_layout_project_1/image/portfolio-1.jpeg);
@@ -176,11 +169,63 @@ button:active {
 
 .border_white {
   position: absolute;
-  width: 250px;
-  height: 150px;
+  width: 350px;
+  height: 250px;
   transition: all 1s;
 }
 .last-content:hover .border_white {
   left: 0px;
   border: solid 20px white;
+}
+
+.fotter-container {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 100px;
+}
+
+.fotter-content {
+  display: flex;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.fotter-menu i {
+  padding: 10px;
+}
+
+.fotter-text {
+  display: flex;
+  margin: auto;
+}
+.fotter-text i {
+  margin-right: 5px;
+}
+@media screen and (max-width: 780px) {
+  p {
+    font-size: 20px;
+  }
+  button {
+    font-size: 20px;
+    padding: 15px;
+  }
+  .main-container {
+    text-align: center;
+    flex-direction: column;
+  }
+  .main-title {
+    font-size: 30px;
+  }
+  .sub-menu p {
+    font-size: 15px;
+  }
+
+  .main-content img {
+    position: relative;
+    left: 34%;
+    width: 200px;
+  }
+
+  .serve-content {
+    flex-direction: column;
+  }
 }
