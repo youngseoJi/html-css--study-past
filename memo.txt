@@ -1,0 +1,7 @@
+1. npm init -y : package.json 생성
+2. npm i tailwindcss : tailwindcss설치
+
+// src 폴더 : 소스파일 css
+// public 폴더 : html 파일 등 (tailwindcss가 처리 후 생성되는 css가 갈곳)
+
+폴더생성
