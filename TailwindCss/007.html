@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tailwindcss</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <!-- Flex, width, gap -->
+  <body>
+    <div class="flex border-4 border-red-300 m-3">
+      <div class="p-2 border-4 border-blue-500">1_hello</div>
+      <div class="p-2 border-4 border-blue-500">1_hello</div>
+      <div class="p-2 border-4 border-blue-500">1_hello</div>
+      <div class="p-2 border-4 border-blue-500">1_hello</div>
+    </div>
+
+    <div class="flex border-4 border-red-300 m-3">
+      <div class="p-2 border-4 border-blue-500">
+        2_Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, aperiam alias? Tempora
+        corrupti neque laborum nemo, iure voluptatibus quia nostrum mollitia possimus reprehenderit
+        provident optio maxime ex accusantium numquam hic.
+      </div>
+      <div class="p-2 border-4 border-blue-500">2_hello</div>
+      <div class="p-2 border-4 border-blue-500">2_hello</div>
+      <div class="p-2 border-4 border-blue-500">2_hello</div>
+    </div>
+
+    <div class="flex flex-col border-4 border-red-300 m-3">
+      <div class="p-2 border-4 border-blue-500">
+        2_Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, aperiam alias? Tempora
+        corrupti neque laborum nemo, iure voluptatibus quia nostrum mollitia possimus reprehenderit
+        provident optio maxime ex accusantium numquam hic.
+      </div>
+      <div class="p-2 border-4 border-blue-500">3_hello</div>
+      <div class="p-2 border-4 border-blue-500">3_hello</div>
+      <div class="p-2 border-4 border-blue-500">3_hello</div>
+    </div>
+
+    <div class="flex flex-wrap border-4 border-red-300 m-3">
+      <!-- 요소 넓이가 꽉차는 넓이여서 다른 요소들은 밑으로 내려간다. -->
+      <div class="p-2 border-4 border-blue-500">
+        2_Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, aperiam alias? Tempora
+        corrupti neque laborum nemo, iure voluptatibus quia nostrum mollitia possimus reprehenderit
+        provident optio maxime ex accusantium numquam hic.
+      </div>
+      <div class="p-2 border-4 border-blue-500">4_hello</div>
+      <div class="p-2 border-4 border-blue-500">4_hello</div>
+      <div class="p-2 border-4 border-blue-500">4_hello</div>
+      <div class="p-2 border-4 border-blue-500">4_hello</div>
+      <div class="p-2 border-4 border-blue-500">4_hello</div>
+      <div class="p-2 border-4 border-blue-500">4_hello</div>
+      <div class="p-2 border-4 border-blue-500">4_hello</div>
+      <div class="p-2 border-4 border-blue-500">4_hello</div>
+      <div class="p-2 border-4 border-blue-500">4_hello</div>
+    </div>
+
+    <!-- 기존 css           ->           tailwind CSS
+        justify-content: center        - justify-center
+        justify-content: space-between - justify-between
+        align-items: flex-start        - items-start
+        align-items: center            - items-center
+        align-self: auto               - self-auto
+        align-slef: flex-start         - self-start
+        align-slef: flex-end           - self-end
+        flex: 1 1 0%                   - flex-1
+        flex: 1 1 auto                 - flex-auto
+        flex: 0 1 auto                 - flex-initial
+        flex: none                     - flex-none
+    -->
+
+    <!-- flex-1 : 동일한 넓이 할당  -->
+    <div class="flex border-4 border-red-300 m-3">
+      <div class="flex-1 p-2 border-4 border-blue-500">5_hello</div>
+      <div class="flex-1 p-2 border-4 border-blue-500">5_hello</div>
+      <div class="flex-1 p-2 border-4 border-blue-500">5_hello</div>
+      <div class="flex-1 p-2 border-4 border-blue-500">5_hello</div>
+      <div class="flex-1 p-2 border-4 border-blue-500">5_hello</div>
+      <div class="flex-1 p-2 border-4 border-blue-500">5_hello</div>
+    </div>
+
+    <!-- 
+        space-x-1 > margin-left: 0.25rem; /* 4px */
+        space-y-1 > margin-top: 0.25rem; /* 4px */
+     ** 문제점 : 1번째 요소를 제외하고 나머지 모든 요소의 왼쪽요소 1만큼 간격
+      -->
+
+    <div class="flex space-x-1 flex-wrap border-4 border-red-300 m-3">
+      <div class="w-16 h-16 p-2 border-4 border-blue-500">6_ hello</div>
+      <div class="w-16 h-16 p-2 border-4 border-blue-500">6_ hello</div>
+      <div class="w-16 h-16 p-2 border-4 border-blue-500">6_ hello</div>
+      <div class="w-16 h-16 p-2 border-4 border-blue-500">6_ hello</div>
+      <div class="w-16 h-16 p-2 border-4 border-blue-500">6_ hello</div>
+      <div class="w-16 h-16 p-2 border-4 border-blue-500">6_ hello</div>
+      <div class="w-16 h-16 p-2 border-4 border-blue-500">6_ hello</div>
+      <div class="w-16 h-16 p-2 border-4 border-blue-500">6_ hello</div>
+      <div class="w-16 h-16 p-2 border-4 border-blue-500">6_ hello</div>
+      <div class="w-16 h-16 p-2 border-4 border-blue-500">6_ hello</div>
+      <div class="w-16 h-16 p-2 border-4 border-blue-500">6_ hello</div>
+      <div class="w-16 h-16 p-2 border-4 border-blue-500">6_ hello</div>
+      <div class="w-16 h-16 p-2 border-4 border-blue-500">6_ hello</div>
+      <div class="w-16 h-16 p-2 border-4 border-blue-500">6_ hello</div>
+      <div class="w-16 h-16 p-2 border-4 border-blue-500">6_ hello</div>
+      <div class="w-16 h-16 p-2 border-4 border-blue-500">6_ hello</div>
+      <div class="w-16 h-16 p-2 border-4 border-blue-500">6_ hello</div>
+      <div class="w-16 h-16 p-2 border-4 border-blue-500">6_ hello</div>
+      <div class="w-16 h-16 p-2 border-4 border-blue-500">6_ hello</div>
+      <div class="w-16 h-16 p-2 border-4 border-blue-500">6_ hello</div>
+    </div>
+
+    <!-- 
+        gap-px	    gap: 1px;
+        gap-x-px	column-gap: 1px;
+        gap-1	    gap: 0.25rem; /* 4px */
+
+        모든 요소 동일하게 간격 생성
+    -->
+
+    <div class="flex gap-6 flex-wrap border-4 border-red-300 m-3">
+      <div class="w-16 h-16 p-2 border-4 border-blue-500">7_ hello</div>
+      <div class="w-16 h-16 p-2 border-4 border-blue-500">7_ hello</div>
+      <div class="w-16 h-16 p-2 border-4 border-blue-500">7_ hello</div>
+      <div class="w-16 h-16 p-2 border-4 border-blue-500">7_ hello</div>
+      <div class="w-16 h-16 p-2 border-4 border-blue-500">7_ hello</div>
+      <div class="w-16 h-16 p-2 border-4 border-blue-500">7_ hello</div>
+      <div class="w-16 h-16 p-2 border-4 border-blue-500">7_ hello</div>
+      <div class="w-16 h-16 p-2 border-4 border-blue-500">7_ hello</div>
+      <div class="w-16 h-16 p-2 border-4 border-blue-500">7_ hello</div>
+      <div class="w-16 h-16 p-2 border-4 border-blue-500">7_ hello</div>
+      <div class="w-16 h-16 p-2 border-4 border-blue-500">7_ hello</div>
+      <div class="w-16 h-16 p-2 border-4 border-blue-500">7_ hello</div>
+    </div>
+
+    <!-- m : 마진으로 간격생성시 
+        -m-3 : 네거티브 마진으로 간격 맞출수있다.>  -->
+    <div class="flex flex-wrap border-4 border-red-300 m-3">
+      <div class="w-16 h-16 m-3 p-2 border-4 border-blue-500">8_ hello</div>
+      <div class="w-16 h-16 m-3 p-2 border-4 border-blue-500">8_ hello</div>
+      <div class="w-16 h-16 m-3 p-2 border-4 border-blue-500">8_ hello</div>
+      <div class="w-16 h-16 m-3 p-2 border-4 border-blue-500">8_ hello</div>
+      <div class="w-16 h-16 m-3 p-2 border-4 border-blue-500">8_ hello</div>
+      <div class="w-16 h-16 m-3 p-2 border-4 border-blue-500">8_ hello</div>
+      <div class="w-16 h-16 m-3 p-2 border-4 border-blue-500">8_ hello</div>
+      <div class="w-16 h-16 m-3 p-2 border-4 border-blue-500">8_ hello</div>
+      <div class="w-16 h-16 m-3 p-2 border-4 border-blue-500">8_ hello</div>
+      <div class="w-16 h-16 m-3 p-2 border-4 border-blue-500">8_ hello</div>
+      <div class="w-16 h-16 m-3 p-2 border-4 border-blue-500">8_ hello</div>
+      <div class="w-16 h-16 m-3 p-2 border-4 border-blue-500">8_ hello</div>
+    </div>
+
+    <!-- 넓이 퍼센트 설정 -->
+    <div class="flex border-4 border-red-300 m-3">
+      <div class="w-2/4 p-2 border-4 border-blue-500">9_ hello</div>
+      <div class="w-1/4 p-2 border-4 border-blue-500">9_ hello</div>
+      <div class="w-1/4 p-2 border-4 border-blue-500">9_ hello</div>
+    </div>
+
+    <div class="flex flex-wrap border-4 border-red-300 m-3">
+      <div class="w-2/4 p-2 border-4 border-blue-500">10_ hello</div>
+      <div class="w-1/4 p-2 border-4 border-blue-500">10_ hello</div>
+      <div class="w-1/4 p-2 border-4 border-blue-500">10_ hello</div>
+      <div class="w-2/4 p-2 border-4 border-blue-500">10_ hello</div>
+      <div class="w-1/4 p-2 border-4 border-blue-500">10_ hello</div>
+      <div class="w-1/4 p-2 border-4 border-blue-500">10_ hello</div>
+    </div>
+
+    <!-- flex사용하지 않고 flex 처럼 사용해보기-->
+    <div class="border-4 border-red-300 m-3">
+      <div class="inline-block p-2 border-4 border-blue-500">11_ hello</div>
+      <div class="inline-block p-2 border-4 border-blue-500">11_ hello</div>
+      <div class="inline-block p-2 border-4 border-blue-500">11_ hello</div>
+      <div class="inline-block p-2 border-4 border-blue-500">11_ hello</div>
+    </div>
+
+    <!--justify-content : space-between-->
+    <div class="flex justify-between border-4 border-red-300 m-3">
+      <div class="p-2 border-4 border-blue-500">12_ hello</div>
+      <div class="p-2 border-4 border-blue-500">12_ hello</div>
+      <div class="p-2 border-4 border-blue-500">12_ hello</div>
+      <div class="p-2 border-4 border-blue-500">12_ hello</div>
+    </div>
+
+    <!--justify-content : center-->
+    <div class="flex justify-center border-4 border-red-300 m-3">
+      <div class="p-2 border-4 border-blue-500">13_ hello</div>
+      <div class="p-2 border-4 border-blue-500">13_ hello</div>
+      <div class="p-2 border-4 border-blue-500">13_ hello</div>
+      <div class="p-2 border-4 border-blue-500">13_ hello</div>
+    </div>
+
+    <!-- 중앙정렬 -->
+    <div class="flex justify-center items-center w-80 h-80 border-4 border-red-300 m-3">
+      <div class="text-center leading-9 w-32 h-16 p-2 border-4 border-red-300">14_hello</div>
+    </div>
+
+    <!-- 접근성과 모바일 고려 -->
+
+    <!-- order-수: UI에서만 - 가장 작은수인 요소가 젤 왼쪽으로 위치한다. -->
+    <div class="flex border-4 border-red-300 m-3">
+      <div class="p-2 border-4 border-blue-500 order-1">15_1 hello</div>
+      <div class="p-2 border-4 border-blue-500 order-0">15_2 hello</div>
+      <div class="p-2 border-4 border-blue-500 order-0">15_3 hello</div>
+      <div class="p-2 border-4 border-blue-500 order-3">15_4 hello</div>
+    </div>
+
+    <div class="flex border-4 border-red-300 m-3">
+      <div class="p-2 border-4 border-blue-500">1_hello</div>
+      <div class="p-2 border-4 border-blue-500">1_hello</div>
+      <div class="p-2 border-4 border-blue-500">1_hello</div>
+      <div class="p-2 border-4 border-blue-500">1_hello</div>
+    </div>
+
+    <div class="flex border-4 border-red-300 m-3">
+      <div class="p-2 border-4 border-blue-500">1_hello</div>
+      <div class="p-2 border-4 border-blue-500">1_hello</div>
+      <div class="p-2 border-4 border-blue-500">1_hello</div>
+      <div class="p-2 border-4 border-blue-500">1_hello</div>
+    </div>
+  </body>
+</html>
