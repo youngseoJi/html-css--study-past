@@ -1,0 +1,28 @@
+body {
+  background: #f7f9fc;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.col-md-4 {
+  border-left: 2px solid grey;
+}
+
+.skill {
+  border: 1px solid grey;
+  border-radius: 20px;
+  padding: 5px;
+}
